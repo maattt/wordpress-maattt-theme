@@ -1,0 +1,210 @@
+@font-face {
+  font-family: 'Virtue';
+  src: url('../fonts/virtue-webfont.eot');
+  src: url('../fonts/virtue-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/virtue-webfont.woff2') format('woff2'),
+    url('../fonts/virtue-webfont.woff') format('woff'),
+    url('../fonts/virtue-webfont.ttf') format('truetype'),
+    url('../fonts/virtue-webfont.svg#virtueregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(146, 49, 48, 1);
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  background: #f3e9e9;
+}
+
+.container {
+  max-width: 55rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.header, .main {
+  padding: 0.4rem 1rem;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  top: 0;
+  border-bottom: 1px solid rgb(146, 49, 48);
+  background: #f3e9e9;
+}
+
+.logo {
+  max-height: 3rem;
+  max-width: 4.5rem;
+}
+
+.triangle {
+  fill: transparent;
+  stroke: rgb(146, 49, 48);
+  stroke-width: 30;
+}
+
+.site-description {
+  display: none;
+  margin: 0;
+  margin-top: 2rem;
+  color: grey;
+  font-family: "Virtue";
+  font-size: 0.8rem;
+}
+
+.links {
+  display: none;
+  margin-top: 5rem;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Virtue";
+}
+
+.links li {
+  margin: 1.5rem 0;
+}
+
+.social {
+  font-weight: bold;
+}
+
+.social:hover {
+  text-decoration: none;
+}
+
+.page-title {
+  margin-top: 0;
+  font-family: "Virtue";
+}
+
+.article {
+  margin-top: 4rem;
+}
+
+.article p {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+input[type="search"].search-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 3rem;
+  padding-left: 3rem;
+  border: none;
+  border: 1px solid #cc9f9f;
+  background: #cc9f9f;
+}
+
+input[type="search"].search-input:focus {
+  border: 1px solid rgb(146, 49, 48);
+  background: white;
+}
+
+.search-icon {
+  display: block;
+  height: 3rem;
+  margin-top: -3rem;
+  padding: 0.8rem;
+}
+
+input[type="search"].search-input:focus + .search-icon {
+  fill: rgb(146, 49, 48);
+}
+
+.blog-year {
+  margin-top: 3rem;
+}
+
+.blog-year h3 {
+  color: grey;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.blog-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.blog-list li {
+  margin-bottom: 1rem;
+  border-bottom: 1px dotted rgba(146, 49, 48, 0.8);
+  padding-bottom: 1rem;
+  font-family: "Virtue";
+  font-size: 1.1rem;
+}
+
+.blog-list:last-child li:last-child {
+  border-bottom: none;
+}
+
+.post-date {
+  color: grey;
+}
+
+@media screen and (min-width: 50em) {
+  .container {
+    width: 80%;
+    margin-top: 0;
+    margin-left: 20%;
+  }
+
+  .header, .main {
+    padding: 2.5rem;
+  }
+
+  .header {
+    height: 100%;
+    width: 20%;
+    margin-left: -20%;
+    border-right: 1px solid rgb(146, 49, 48);
+    border-bottom: none;
+    text-align: center;
+  }
+
+  .site-description, .links {
+    display: block;
+  }
+
+  .logo {
+    max-height: 5rem;
+  }
+}
+
+@media screen and (min-width: 95em) {
+  .container {
+    width: 100%;
+    min-height: 100%;
+    margin-left: 0;
+    margin: 0 auto;
+  }
+
+  .header {
+    width: 20rem;
+    margin-left: -20rem;
+  }
+}
+

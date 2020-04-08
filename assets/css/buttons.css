@@ -1,0 +1,61 @@
+.button-toggle-navigation {
+  position: fixed;
+  top: 0; right: 0;
+  z-index: 100;
+
+  background-color: transparent;
+  border: 0;
+  border-bottom: .25em solid black;
+  border-top: .25em solid black;
+  font-size: 25px;
+  cursor: pointer;
+  height: 1.5em;
+  margin: .5em 1rem;
+  outline: 0;
+  transition: border-color 150ms ease-out,
+              transform 150ms ease-out;
+  width: 2.25em;
+}
+.button-toggle-navigation::after,
+.button-toggle-navigation::before {
+  border-bottom: .25em solid black;
+  bottom: .375em;
+  content: '';
+  height: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transition: transform 200ms ease-out;
+}
+
+.button-toggle-navigation span {
+  color: transparent;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.isActive {
+  position: fixed;
+  border-color: transparent;
+  transform: rotateZ(90deg);
+}
+
+.isActive::after,
+.isActive::before {
+  border-bottom: .25em solid white;
+}
+
+.isActive::after,
+.isActive::before {
+  transition: transform 200ms ease-out;
+}
+
+.isActive::after {
+  transform: rotateZ(45deg);
+}
+
+.isActive::before {
+  transform: rotateZ(-45deg);
+}

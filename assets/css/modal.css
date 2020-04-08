@@ -1,0 +1,68 @@
+.modal {
+  position: fixed;
+  left: 0; top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 600ms ease;
+  background: black;
+  overflow: auto;
+  font-family: "Virtue";
+}
+
+.modal.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 600ms ease, visibility 600ms;
+}
+
+.modal nav {
+  margin: 80px 0 40px;
+  text-align: center;
+}
+
+.modal ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal li {
+  margin: 25px 0;
+}
+
+.modal a {
+  color: white;
+  font-size: 1.5em;
+}
+
+.modal em {
+  font-size: 0.8em;
+  display: block;
+  color: grey;
+  font-style: normal;
+}
+
+@media screen and (min-width: 960px) {
+  .modal {
+    font-size: 2em;
+  }
+  
+  .modal nav{
+    margin: 100px 0 0 0;
+  }
+
+  .modal li{
+    margin: 60px 0;
+  }
+  
+  .modal em{
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (min-height: 700px) {
+  .modal nav {
+    margin: 140px 0 0 0;
+  }
+}
