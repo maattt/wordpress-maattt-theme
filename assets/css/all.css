@@ -145,6 +145,10 @@ body {
   font-size: 1.1rem;
 }
 
+.blog-search {
+  margin: 2.5rem 0;
+}
+
 input[type="search"].search-input {
   box-sizing: border-box;
   width: 100%;
@@ -171,10 +175,6 @@ input[type="search"].search-input:focus + .search-icon {
   fill: rgb(146, 49, 48);
 }
 
-.blog-year {
-  margin-top: 3rem;
-}
-
 .blog-year h3 {
   color: grey;
   font-weight: normal;
@@ -183,7 +183,7 @@ input[type="search"].search-input:focus + .search-icon {
 
 .blog-list {
   padding: 0;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
   list-style-type: none;
 }
 
