@@ -3,9 +3,13 @@
 <?php if (have_posts()): ?>
   <?php while (have_posts()): the_post(); ?>
     <header>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="https://matthieuhebert.fr">MatthieuHébert.fr</a></li>
+        <li class="breadcrumb-item"><a href="<?= home_url() ?>"><?php bloginfo('name') ?></a></li>
+      </ol>
       <h1 class="page-title"><?php the_title() ?></h1>
+      <time class="post-date">Publié le <?php the_date() ?></time>
     </header>
-    <time class="post-date">Publié le <?php the_date() ?></time>
     <article class="article">
       <?php the_content() ?>
     </article>

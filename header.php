@@ -9,13 +9,13 @@
   <body>
     <div class="container">
       <header class="header">
-        <a href="/">
+        <a href="<?= home_url() ?>">
           <svg class="logo" version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
             <polygon points="250,60 60,460 460,460" class="triangle" />
             Sorry, your browser does not support inline SVG.
           </svg>
         </a>
-        <p class="site-description">Matthieu Hébert, développeur web normand, runner amateur, amateur de sport, fan de rock anglais</p>
+        <p class="site-description"><?php bloginfo('description') ?></p>
         <nav>
           <ul class="links">
             <li><a href="https://twitter.com/maattt10" title="Suis-moi sur Twitter !" class="social" rel="nofollow">Twitter</a></li>
@@ -28,4 +28,3 @@
         </nav>
       </header>
       <main class="main">
-      

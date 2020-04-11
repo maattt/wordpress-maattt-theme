@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 <header>
-  <h1 class="page-title">Blog</h1>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="https://matthieuhebert.fr">MatthieuHébert.fr</a></li>
+  </ol>
+  <h1 class="page-title"><?php bloginfo('name') ?></h1>
 </header>
 
 <?= get_search_form(); ?>

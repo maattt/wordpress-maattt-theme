@@ -102,13 +102,41 @@ body {
   color: rgba(146, 49, 48, 1);
 }
 
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumb-item a {
+  color: grey;
+}
+
+.breadcrumb-item a:hover {
+  color: rgba(146, 49, 48, 1);
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 0.5rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  color: grey;
+  /* color: rgba(146, 49, 48, 1); */
+  content: "/";
+}
+
 .page-title {
-  margin-top: 0;
+  margin: 1rem 0;
   font-family: "Virtue";
 }
 
 .article {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .article p {
