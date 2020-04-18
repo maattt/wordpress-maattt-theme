@@ -255,7 +255,7 @@ input[type="search"].search-input:focus + .search-icon {
   height: auto;
 }
 
-.article pre {
+.article pre, .article code {
   background: white;
   padding: 0.5rem;
 }
