@@ -259,4 +259,5 @@ input[type="search"].search-input:focus + .search-icon {
   display: block;
   background: white;
   padding: 0.5rem;
+  font-size: 0.9rem;
 }
