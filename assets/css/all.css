@@ -254,3 +254,8 @@ input[type="search"].search-input:focus + .search-icon {
   max-width: 100%;
   height: auto;
 }
+
+.article pre {
+  background: white;
+  padding: 0.5rem;
+}
