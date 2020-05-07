@@ -10,7 +10,7 @@
 
 <div class="blog-year">
   <?php
-    query_posts(array('nopaging' => 1));
+    query_posts(array('nopaging' => 1, 's' => $s));
     $prev_year = null;
     if (have_posts()) {
       while (have_posts()) {

@@ -231,6 +231,11 @@ input[type="search"].search-input:focus + .search-icon {
   }
 }
 
+h3.comments {
+  margin-top: 3rem;
+  font-family: "Virtue";
+}
+
 @media screen and (min-width: 95em) {
   .container {
     width: 100%;
